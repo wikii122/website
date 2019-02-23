@@ -1,0 +1,9 @@
+@import "../../node_modules/reset.css/reset";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+@import "../../node_modules/bulma/bulma";
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+}

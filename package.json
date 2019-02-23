@@ -1,0 +1,32 @@
+{
+  "name": "zlotosrebro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Wiktor Ślęczka <wikii122@gmail.com>",
+  "private": true,
+  "description": "Website",
+  "keywords": [
+    "sass",
+    "bulma",
+    "css",
+    "start"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "reset.css": "^2.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "build": "yarn run gulp build",
+    "dev": "yarn run gulp dev"
+  }
+}
