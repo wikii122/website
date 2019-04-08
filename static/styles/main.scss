@@ -1,6 +1,8 @@
 @import "../../node_modules/reset.css/reset";
 @import "../../node_modules/bulma/sass/utilities/functions";
 
+$dimensions: (256);
+
 @import "../../node_modules/bulma/bulma";
 
 html {
@@ -11,12 +13,25 @@ html {
 .image {
   margin-bottom: 3em !important;
 
-  &.is-256x256 {
-    height: 256px;
-    width: 256px;
-  }
-
   &.is-centered {
     margin: auto;
+  }
+
+  @include mobile {
+    &.has-fade-mobile { 
+      max-height: 35vh;
+      overflow: hidden;
+
+      &:after {
+        position: absolute;
+        height: 20vh;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        content: " ";
+      }
+    }
   }
 }
