@@ -1,7 +1,7 @@
 @import "../../node_modules/reset.css/reset";
 @import "../../node_modules/bulma/sass/utilities/functions";
 
-$dimensions: (256);
+$dimensions: (128, 256);
 
 @import "../../node_modules/bulma/bulma";
 
@@ -51,4 +51,21 @@ html {
     padding: 0;
     padding-bottom: 1rem;
   }
+}
+
+.image {
+  margin: 3rem;
+
+  &.is-aligned {
+    height: 6rem;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.tile.is-parent.is-wrapping {
+  flex-wrap: wrap;
 }
