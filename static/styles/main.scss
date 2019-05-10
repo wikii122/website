@@ -40,6 +40,15 @@ html {
   letter-spacing: 1em;
 }
 
-.has-children-centered {
-  justify-content: center;
+.tile:not(.is-child).has-children-centered {
+  justify-content: space-evenly;
+}
+
+.card.is-borderless {
+  box-shadow: none;
+
+  .card-content {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
 }
